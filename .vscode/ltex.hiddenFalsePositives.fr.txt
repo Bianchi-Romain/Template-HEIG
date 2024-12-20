@@ -1,0 +1,4 @@
+{"rule":"COMPLETER_UN_PROJET","sentence":"^\\QPour compléter le projet, les adapteurs de toutes les pointes devraient être conçu.\\E$"}
+{"rule":"COMPLETER_UN_PROJET","sentence":"^\\QPour compléter ce projet, les adaptateurs de toutes les pointes devraient être conçu.\\E$"}
+{"rule":"PRONOMS_PERSONNELS_MINUSCULE","sentence":"^\\QChute inférieure vue de droite Il est possible de voir le cylindre bloqué par une extrusion (bas droite du cylindre) et par les deux micros vérins (bas gauche et milieu gauche du cylindre).\\E$"}
+{"rule":"FR_SPELLING_RULE","sentence":"^\\QTm = Tm mNm\\E$"}

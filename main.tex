@@ -1,0 +1,89 @@
+\documentclass{rapport}
+\usepackage{pythontex}
+\usepackage{csquotes}
+\addbibresource{library.bib}
+
+
+\begin{document}
+
+%----------- Informations du rapport ---------
+
+\unif{HEIG-VD}
+\titre{Titre} %Titre du fichier .pdf
+\cours{Cours} %Nom du cours
+\sujet{Sujet} %Nom du sujet
+\groupe{Groupe} %Nom du groupe
+
+\enseignant{Bruce  \textsc{Wayne} \\
+            Tony  \textsc{Stark}} %Nom de l'enseignant
+
+\eleves{James   \textsc{Bond} \\
+        James  \textsc{Bond}\\
+        James \textsc{Bond}} %Nom des élèves
+
+\nom{James Bond, James Bond, James Bond} %nom dans l'entête
+
+%----------- Initialisation -------------------
+
+
+\fairepagedegarde %Créer la page de garde
+\thispagestyle{noPage}
+\tabledematieres %Créer la table de matières
+\thispagestyle{noPage}
+\newpage
+\listoffigures
+\listoftables
+\clearpage
+\setcounter{page}{1}
+\fairemarges %Afficher les marges
+%------------ Corps du rapport ----------------
+
+
+\input{Chapitres/ch1.tex}
+\input{Chapitres/ch2.tex}
+\input{Chapitres/ch3.tex}
+\input{Chapitres/ch4.tex}
+\input{Chapitres/ch5.tex}
+%\input{Chapitres/commandes.tex}
+
+
+
+\begin{flushright}
+    Yverdon, {\today\par}
+\end{flushright}
+% \vspace{1cm}
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[b]{0.3\textwidth}
+      \centering
+      James Bond\\
+      \includegraphics[height=0.4\textwidth]{logos/arbre.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.3\textwidth}
+      \centering
+      James Bond\\
+      \includegraphics[height=0.4\textwidth]{logos/arbre.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.3\textwidth}
+      \centering
+      James Bond\\
+      \includegraphics[height=0.4\textwidth]{logos/arbre.png}
+    \end{minipage}
+  \end{figure}
+
+\newpage
+\printbibliography % To generate the bibliography
+
+\newpage
+\appendix
+
+% \includepdf[pages=1,pagecommand={\thispagestyle{empty}\vspace*{-3.3cm}\section{SKF 618/4}\label{pdf:skf 618_4}}]{PDF/Louis/618_4 SKF.pdf}
+% \includepdf[pages=2-4]{PDF/Louis/618_4 SKF.pdf}
+
+
+
+
+\end{document}
